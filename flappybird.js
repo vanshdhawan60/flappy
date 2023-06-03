@@ -62,6 +62,8 @@ window.onload = () => {
     requestAnimationFrame(update);
     setInterval (placePipes, 1500);
     document.addEventListener ("keydown", moveBird);
+    document.addEventListener ("click", moveBird);
+    document.addEventListener ("touchstart", moveBird);
 }
 
 function  update() {
